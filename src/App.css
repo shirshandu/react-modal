@@ -6,9 +6,41 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
 }
 
 .modalShow-true{
   opacity: 1;
   pointer-events: all;
+}
+
+.modalInner{
+  background: #1e2939;
+  width: 900px;
+  max-width: calc(100%- 60px);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align: left;
+}
+
+.modalImage img{
+  width: 100%;
+}
+
+.modalText{
+  padding: 15px;
+}
+
+.open{
+  margin: 30%;
 }
